@@ -9,9 +9,10 @@
   box-sizing: border-box; 
 }
 
-.container{
 
-  width: 1200px;
+.container{
+  width: 100%;
+  max-width:1200px;
   margin: 0px auto;
   
 }
@@ -103,7 +104,7 @@ text-align: left;
 
 /* Banner Section */
 .banner-section{
-   height: 84vh;
+  height: 84vh;
   background-image: url("../assets/hero-bg.png");
   background-size: cover;
   background-position: center;
@@ -124,8 +125,8 @@ text-align: left;
 
 .podcast-circle{
   position: relative;
-  width: 430px;
-  height: 430px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   border: 8px solid rgba(42, 24, 108, 1);
   background: linear-gradient(
@@ -141,14 +142,14 @@ text-align: left;
 
 
 .circle-icon img{
-  width: 200px;
+  width: 100%;
   height: auto;
 }
 
 
 .badge-new{
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 20px;
   background: #2cff8f;
   color: #000;
@@ -233,7 +234,7 @@ opacity: 0.6;
 hr{
   margin: 4rem 0rem;
   border: 1px solid  rgba(255, 255, 255, 1);
-opacity: 0.1;
+  opacity: 0.1;
 
 }
 
@@ -305,7 +306,7 @@ margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease, 0.3s ease;
 }
 
 .why-card:hover{
@@ -415,7 +416,7 @@ opacity: 0.6;
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.04),
     0 18px 40px rgba(0,0,0,0.35);
-  transition: transform 0.35s ease, background 0.35s ease;
+  transition: transform 0.35s ease,  0.35s ease;
 }
 
 .episode-card:hover{
@@ -541,7 +542,7 @@ opacity: 0.6;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, background 0.3s ease;
+  transition: transform 0.3s ease,  0.3s ease;
 }
 
 .host-social a:hover{
@@ -563,6 +564,7 @@ opacity: 0.6;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   padding: 80px 0;
   color: #fff;
   text-align: center;
@@ -592,7 +594,8 @@ opacity: 0.6;
 .footer-platforms {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
+  margin-bottom: 16px;
 }
 
 .footer-platforms a {
@@ -616,8 +619,6 @@ opacity: 0.6;
 }
 
 
-
-  
 
 @media screen and (max-width: 576px){
 
@@ -654,6 +655,7 @@ opacity: 0.6;
 
   
   .banner-section{
+   
     height: auto;
     padding: 3rem 0;
   }
@@ -664,8 +666,8 @@ opacity: 0.6;
     height: 260px;
   }
 
-  .circle-icon img{
-    width: 120px;
+ .circle-icon img{
+    width: 100%;
   }
 
   .badge-new{
@@ -785,12 +787,14 @@ opacity: 0.6;
 
 
   .footer-platforms {
-    display: grid;
-    grid-template-columns: repeat(2, auto); 
+    display: flex;
+    /* grid-template-columns: repeat(2, auto);  */
     gap: 20px 40px; 
+    width: 255px;
+    flex-wrap: wrap;
     justify-content: center;
-   justify-items: center;
-    text-align: left; 
+
+    
   }
 
   .footer-platforms a {
