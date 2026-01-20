@@ -270,7 +270,8 @@ opacity: 0.8;
 /* Why Choose TechWave */
 
 .why-choose{
-  background: rgba(35, 14, 61, 1);
+  
+  background: rgba(37, 13, 68, 1);
   padding: 6rem 0;
   color: #fff;
 }
@@ -299,8 +300,7 @@ opacity: 0.8;
 
 .why-card{
   position: relative;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 18px;
+ background: rgba(53, 17, 101, 0.4);  border-radius: 18px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -308,7 +308,6 @@ opacity: 0.8;
   overflow: hidden;
   transition: transform 0.3s ease,  0.3s ease;
 }
-
 
 .why-card::before{
   content: "";
@@ -320,11 +319,10 @@ opacity: 0.8;
     #00f2ff,
     #7b61ff
   );
-  animation: rotateBorder 3s linear infinite;
+  animation: rotateBorder 8s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-
 
 .why-card::after{
   content: "";
@@ -361,7 +359,7 @@ opacity: 0.8;
   }
 }
 
-/* ===== GRID VARIANTS ===== */
+
 
 .why-card-large{
   padding: 6rem 2.20rem;
@@ -383,6 +381,7 @@ opacity: 0.8;
 .why-card:nth-child(5){
   grid-column: 3 / 4;
 }
+
 
 
 .card-icon{
@@ -417,7 +416,6 @@ opacity: 0.8;
 
 
 
-/* FEATURED EPISODES SECTION */
 
 .featured-episodes{
   background: rgba(26, 11, 46, 1);
@@ -511,7 +509,7 @@ opacity: 0.6;
 .episode-duration i{
   font-size: 0.75rem;
 }
-/* HOST CARD*/
+
 
 .meet-host{
   padding: 6rem 0;
@@ -688,10 +686,18 @@ opacity: 0.6;
 
   
   .banner-section{
+
+  background-image: url("../assets/hero-bg.png");
+  background-size: 100% 100%;
+  background-position:center;
+  align-items: center;
+  height: auto;
+  padding: 3rem 0;
+}
+
    
-    height: auto;
-    padding: 3rem 0;
-  }
+  
+  
 
 
   .podcast-circle{
@@ -814,8 +820,8 @@ opacity: 0.6;
     background-color: #1a0b3c;
     background-image: url(../assets/footer-bg.png);
     background-repeat: no-repeat;
-    background-position: 100%  100%;
-    background-size: cover;
+    background-position: center;
+    background-size: 150% 100%;
     padding: 80px 0;
     color: #fff;
     text-align: center;
@@ -842,6 +848,7 @@ opacity: 0.6;
   .footer-platforms a {
     justify-content: center;
     justify-items: center;
+    
   }
 
   .footer-copy {
@@ -851,5 +858,8 @@ opacity: 0.6;
 
 
 }
+
+
+
 
 
